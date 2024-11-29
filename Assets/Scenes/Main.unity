@@ -207,6 +207,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &582667537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 582667538}
+  - component: {fileID: 582667539}
+  m_Layer: 0
+  m_Name: Match Finder
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &582667538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582667537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.285552, y: -1.9784422, z: -0.0331104}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582667539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582667537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6727256c1a8ac0844a6c0b363f8e9698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMatches: []
 --- !u!1 &1354655440
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,8 +296,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a09d7054ade7640824cce5c7dfd1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 1
   width: 7
   height: 10
+  offSet: 20
   titlePrefab: {fileID: 6371300739014275311, guid: 19f4be7109b73db45a3bd4c4b04214d6, type: 3}
   dots:
   - {fileID: 5282459662669702183, guid: aff65514dce41d44b885507c5d621601, type: 3}
@@ -263,3 +310,4 @@ MonoBehaviour:
   - {fileID: 2731918752552916760, guid: d118c2870ffc0214ea5cb1d9ea121586, type: 3}
   - {fileID: 3053588267857118743, guid: 7cabcf627d66c714c97cc81b83c7fff8, type: 3}
   - {fileID: 8366165561551515769, guid: 3453a6d2181efe445afd9f93c711de70, type: 3}
+  destroyEffect: {fileID: 5106636557782493277, guid: 533712a8d87815942b93f13aa8c68987, type: 3}
